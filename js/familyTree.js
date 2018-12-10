@@ -35,3 +35,5 @@ let firstChild = new Doctor(parent, 68);
 let firstSubChild = new Dentist(firstChild, 28);
 let secondSubChild = new Pathologist(firstChild, 85);
 let secondChild = new Engineer(parent, 88);
+
+//check this please
