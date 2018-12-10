@@ -1,0 +1,91 @@
+html {
+    user-select: none;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #373737;
+}
+
+.content-wrapper {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.level {
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+
+.parent, .child {
+    display: block;
+    height: 100%;
+}
+
+.parent {
+    width: 100%;
+}
+
+.child {
+    width: 50%;
+}
+
+.node {
+    position: relative;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    background-color: #5b5b5b;
+    border: 1px solid #131313;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.add-node-button {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: lightgrey;
+}
+
+.divider {
+    position: relative;
+    height: 1px;
+    transform: translateY(-20px);
+    background: black;
+    margin: auto;
+    margin-top: -1px;
+    margin-bottom: -2px;
+}
+
+.with-after:after, .with-before:before {
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 1px;
+    height: 20px;
+    content: '';
+    background: black;
+    left: 50%;
+}
+
+.with-after:after {
+    top: 100%;
+}
+
+.with-before:before {
+    top: -20px;
+}
